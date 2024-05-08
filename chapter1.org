@@ -1,0 +1,49 @@
+Who is RedHat?
+- A support company for FOSS software
+- Red Hat Enterprise Linux
+
+Red Hat Enterprise Linux Ecosystem
+
+| Community               |                                | Development/testing     |                                 | Enterprise                  |
+|-------------------------+--------------------------------+-------------------------+---------------------------------+-----------------------------|
+| Extra packages for EPEL | packaging works with --------- | ----------------------- | ->                              | RedHat Universal Base Image |
+| contributes to   ^      |                                | V                    -- | ->                              | supplies components to ^    |
+| Fedora                  | supplies core components to -> | CentOS Stream           | becomes versioned release of -> | RHEL                        |
+|                         |                                |                         |                                 | supplies components to      |
+|                         |                                |                         |                                 | RedHat CoreOS               |
+
+Fedora
+- Prioritizes:
+  - long-term stability
+  - inovative (at least compared to RHEL lol)
+
+Extra Packages for Enterprise Linux (EPEL)
+- A community maintened repository with Extra things (extra repo)
+
+CentOS Stream
+- Upstream project for RHEL
+
+Red Hat Enterprive Linux
+- production-ready redhat's linux distro
+- Payed
+- Differences table
+
+|                           | Fedora       | CentOS Stream | RHEL     |
+|---------------------------+--------------+---------------+----------|
+| Expected Lifecycle        | 12-18 months | 5 years       | 10 years |
+| Software vendor certified | No           | Usually not   | Yes      |
+| Documentation provided by | Community    | Comminity     | RedHat   |
+| Expert suport avaiable    | No           | No            | Yes      |
+| Product security team     | No           | No            | Yes      |
+| Security certifications   | No           | No            | Yes      |
+| No-cost options           | Yes          | Yes           | Yes      |
+| Management tools          | No           | No            | Yes      |
+
+RHEL for Edge
+- image based
+
+Red Hat CoreOS
+- redhat's core
+
+Red Hat Universal Base Image
+- Free RHEL derivative
