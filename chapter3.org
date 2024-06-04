@@ -46,5 +46,31 @@ In RHEL 7 and later, four older directories in / have identical contents to thei
 - /lib and /usr/lib
 - /lib64 and /usr/lib64
 
-* Specify Files by Name
+* Specify Files by Name and Path
+
+The path of a dir specifies it's unique location in the file-system.
+
+A 'space' character is acceptable in Linux, but it's better not to use.
+
+*** Absolute Path
+
+An absolute path is a fully qualified name that specifies the exact location of the file in the file-system hierarchy.
+
+*** Current working dir and relative paths
+
+When a user logs, their initial location is the user's home dir. The working dir terms refer to their current location.
+
+*** Dir commands
+
+- pwd
+  - displays full path name of current dir
+- cd [directory/path/../.]
+  - change directory
+- touch
+  - updates time stamp to current date, is also useful to create empty files
+- ls 
+  - l (long list)
+  - a (all files, including hidden files)
+  - R (recursive, display subdirs content)
+  - h (human readable values)
 
