@@ -1,0 +1,50 @@
+* Chapter 3. Manage Files from the Command Line
+
+*** Fil-system Hierarchy
+
+Files are organized in a single inverted tree known as file-system hierarchy, which is an inverted tree.
+
+/ -> bin, boot, dev, etc, home, root, run, sbin, tmp, usr, var
+
+home -> users folders
+
+usr -> bin, local, sbin, tmp
+
+var -> tmp
+
+the / directory is the root directory.
+
+*** Terms to describe fs dir contents
+
+- Static: content remains unchanged until edited or reconfig
+
+- Dynamic/variable: might be modified by active process
+
+- Persistent: remains after reboot (config files)
+
+- Runtime: from a process or system, deleted on reboot
+
+*** FS dir utility
+
+| Location | Purpose                                                                                                                                                                                                              |
+| /boot    | Files to start boot process                                                                                                                                                                                          |
+| /dev     | Special device files that system uses to access hardware                                                                                                                                                             |
+| /etc     | System-specific config files                                                                                                                                                                                         |
+| /home    | Where regular users stores data and config files                                                                                                                                                                     |
+| /root    | Where root user stores data and config files                                                                                                                                                                         |
+| /run     | Runtime data for processes that started since last boot. Processes ID files and lock files. Contents re-created on reboot                                                                                            |
+| /tmp     | A world-writabble space for temp files. Files not accessed, changed or modified for 10 days are automatically deleted.                                                                                               |
+| /usr     | Installed software, shared libraries dir. Significant subdirectories are /usr/bin (user commands), /usr/sbin (sysadmin commands) and /usr/local (locally customized software)                                        |
+| /var     | System-specific var data that should persist between boots. Files that dinamically change, such as databases, cache directories, log files, printer-spooled documents, and website content might be found under /var |
+
+*** IMPORTANT
+
+In RHEL 7 and later, four older directories in / have identical contents to their counterparts in /usr:
+
+- /bin and /usr/bin
+- /sbin and /usr/sbin
+- /lib and /usr/lib
+- /lib64 and /usr/lib64
+
+* Specify Files by Name
+
